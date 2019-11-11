@@ -1,4 +1,10 @@
-# bugger-front-end
+# bugger0.2
+
+To log into Bugger ver0.2, use the following:
+
+username: admin
+<br>password: admin
+
 
 ## Project setup
 ```
@@ -13,6 +19,11 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Run your tests
+```
+npm run test
 ```
 
 ### Lints and fixes files
