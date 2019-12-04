@@ -1,9 +1,9 @@
 <template>
 	<div id="app">
 		<div class = "header">
-			<h1>Bugger Ver 0.2</h1>
+			<h1>Bugger Ver 0.4</h1>
 			<h2>- Bugtracking Program - </h2>
-		
+
 		<p class ="loggedUser" v-if="user">Logged in as: <b>{{user.username}}</b></p>
 		</div>
 
@@ -19,7 +19,7 @@
 
 		<div v-if="!user">
 			<login />
-			<br><center><a target="_blank" href="https://github.com/cbshuman/Bugger0.2"><img src ="git.png"></a></center>
+			<br><center><a target="_blank" href="https://github.com/cbshuman/Bugger"><img src ="git.png"></a></center>
 		</div>
 
 		<router-view  v-else />

@@ -60,12 +60,12 @@ export default new Vuex.Store(
 				{
 				let response = await axios.post("/api/users/login", data);
 				context.commit('setUser', response.data);
-                console.log(response);
+        console.log(response);
 				return "";
 				}
 			catch (error)
 				{
-                console.log(error);
+        console.log(error);
 				return "Error: " + error.response.data.message;
 				}
 			},
@@ -74,6 +74,7 @@ export default new Vuex.Store(
 			try
 				{
 				let response = await axios.get("/api/users");
+				console.log(response);
 				context.commit('setUser', response.data);
 				return "";
 				}
